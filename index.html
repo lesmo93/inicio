@@ -43,7 +43,8 @@ img.emoji {
 <link rel='stylesheet'  href='assets/css/style.min.css' type='text/css' media='all' />
 
 <link rel="stylesheet" href="assets/css/font-awesome.css" />
-
+<link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 <script src="assets/js/jquery-1.12.4.js"></script>
 
 <script type='text/javascript' src='assets/js/jquery/ui/core.min35d0.js?ver=1.12.1' id='jquery-ui-core-js'></script>
@@ -1631,15 +1632,21 @@ E-mail: adiosese@unida.edu.py
 <section id="clients" class="section clear-mrg padd-box">
 <h2 class="title-lg text-upper">Tecnologías</h2>
 <div class="padd-box-sm">
-<ul class="clients clear-list">
-<li>
-<img width="117" height="26" src="assets/uploads/sites/2/2017/05/android.png" class=" wp-post-image" alt="" loading="lazy" /> </li><li>
-<img width="117" height="26" src="assets/uploads/sites/2/2017/05/java.png" class=" wp-post-image" alt="" loading="lazy" /> </li><li>
-<img width="117" height="26" src="assets/uploads/sites/2/2017/05/swift.png" class=" wp-post-image" alt="" loading="lazy" /> </li><li>
-<img width="117" height="26" src="assets/uploads/sites/2/2017/05/genexus.jpg" class=" wp-post-image" alt="" loading="lazy" /> </li><li>
-<img width="117" height="26" src="assets/uploads/sites/2/2017/05/git.png" class=" wp-post-image" alt="" loading="lazy" /> </li><li>
-<img width="117" height="26" src="assets/uploads/sites/2/2017/05/sql.png" class=" wp-post-image" alt="" loading="lazy" /> </li><li>
 
+<div class="owl-carousel owl-theme">
+    <div class="item"><img width="117" height="26" src="assets/uploads/sites/2/2017/05/android.png" class=" wp-post-image" alt="" loading="lazy" /></div>
+	<div class="item"><img width="117" height="26" src="assets/uploads/sites/2/2017/05/pythonicon.png" class=" wp-post-image" alt="" loading="lazy" /></div>
+    <div class="item"><img width="117" height="26" src="assets/uploads/sites/2/2017/05/java.png" class=" wp-post-image" alt="" loading="lazy" /></div>
+	<div class="item"><img width="117" height="26" src="assets/uploads/sites/2/2017/05/swift.png" class=" wp-post-image" alt="" loading="lazy" /></div>
+	<div class="item"><img width="117" height="26" src="assets/uploads/sites/2/2017/05/genexus.png" class=" wp-post-image" alt="" loading="lazy" /></div>
+	<div class="item"><img width="117" height="26" src="assets/uploads/sites/2/2017/05/spring.png" class=" wp-post-image" alt="" loading="lazy" /></div>
+	<div class="item"><img width="117" height="26" src="assets/uploads/sites/2/2017/05/git.png" class=" wp-post-image" alt="" loading="lazy" /></div>
+	<div class="item"><img width="117" height="26" src="assets/uploads/sites/2/2017/05/sql.png" class=" wp-post-image" alt="" loading="lazy" /></div>
+	<div class="item"><img width="117" height="26" src="assets/uploads/sites/2/2017/05/db2.png" class=" wp-post-image" alt="" loading="lazy" /></div>
+	<div class="item"><img width="117" height="26" src="assets/uploads/sites/2/2017/05/lotus.png" class=" wp-post-image" alt="" loading="lazy" /></div>
+	<div class="item"><img width="117" height="26" src="assets/uploads/sites/2/2017/05/php.png" class=" wp-post-image" alt="" loading="lazy" /></div>
+	<div class="item"><img width="117" height="26" src="assets/uploads/sites/2/2017/05/node.png" class=" wp-post-image" alt="" loading="lazy" /></div>
+</div>
 </div>
 </section>
 </div>
@@ -1748,6 +1755,37 @@ var certy_vars_from_WP = {"themeColor":"#0091C4","mapStyles":"[\n    {\n        
 </script>
 <script type='text/javascript' src='assets/js/theme.min.js'></script>
 <script type='text/javascript' src='assets/js/wp-embed.min.js?ver=5.6.4' id='wp-embed-js'></script>
+<script type='text/javascript' src='assets/js/owl.carousel.min.js'></script>
+		<script>
+			$(document).ready(function(){
+			  $(".owl-carousel").owlCarousel({
+			  	loop:true,
+			  	nav:true,
+			  	autoplay:true,
+			    autoplayTimeout:2000,
+			    autoplayHoverPause:true,
+			    responsiveClass:true,
+				margin:30,
+				autoWidth:true,
+			    responsive:{
+			        0:{
+			            items:1
+			        },
+			        600:{
+			            items:2
+			        },
+			        1000:{
+			            items:5
+			        }
+			    }
+			  });
+			});
+	    </script>
+		<style>
+				.active>span {
+					background:#0091C4 !Important;
+				}
+		</style>
 </body>
 
 </html>
